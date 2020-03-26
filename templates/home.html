@@ -1,0 +1,8 @@
+Enter the text you want to count :)
+<br><br><br><br>
+<form class="" action="{% url "count" %}" method="post">{% csrf_token %}>
+  <textarea name="fulltext" rows="30" cols="80">Click on me and start typing</textarea>
+  <br/>
+  <input type="submit" name="count" value="submit">
+</form>
+<a href="{% url 'about'%}">About</a>
